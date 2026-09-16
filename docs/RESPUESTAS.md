@@ -13,5 +13,31 @@ Si `PacienteRepositorioEnMemoria` fuera inyectado como `factory`, Koin podría e
 
 **Resultado de Pruebas**
 ```
-(Reemplazar con salida real de pruebas)
+> Task :shared:testAndroidHostTest
+pe.edu.upeu.clinicamobil.domain.model.PacienteTest > rechazaNombreVacio PASSED
+pe.edu.upeu.clinicamobil.domain.model.PacienteTest > rechazaEdadFueraDeRango PASSED
+pe.edu.upeu.clinicamobil.domain.model.PacienteTest > esPediatricoVerdaderoCon17 PASSED
+pe.edu.upeu.clinicamobil.domain.model.PacienteTest > esPediatricoFalsoCon18 PASSED
+pe.edu.upeu.clinicamobil.domain.model.AtencionTest > rechazaCeroMinutos PASSED
+pe.edu.upeu.clinicamobil.domain.model.AtencionTest > rechaza121Minutos PASSED
+pe.edu.upeu.clinicamobil.domain.model.AtencionTest > costoDe30MinutosEs75 PASSED
+pe.edu.upeu.clinicamobil.domain.usecase.RegistrarPacienteUseCaseTest > pacienteValidoEIdAsignado PASSED
+pe.edu.upeu.clinicamobil.domain.usecase.RegistrarPacienteUseCaseTest > mensajesValidacionExactos PASSED
+pe.edu.upeu.clinicamobil.domain.usecase.RegistrarPacienteUseCaseTest > falloDelRepositorioComoResultFailure PASSED
+pe.edu.upeu.clinicamobil.domain.usecase.RegistrarMedicoUseCaseTest > validacionDeColegiaturaYEspecialidadYGuardadoNull PASSED
+pe.edu.upeu.clinicamobil.data.repository.PacienteRepositorioEnMemoriaTest > idsCorrelativosYListadoEnOrden PASSED
+pe.edu.upeu.clinicamobil.data.repository.MedicoRepositorioEnMemoriaTest > idsCorrelativosYListadoEnOrden PASSED
+pe.edu.upeu.clinicamobil.presentation.paciente.PacienteViewModelTest > arrancaEnSinPacientes PASSED
+pe.edu.upeu.clinicamobil.presentation.paciente.PacienteViewModelTest > muestraFormatoEdadYPeso PASSED
+pe.edu.upeu.clinicamobil.presentation.paciente.PacienteViewModelTest > pasaAError PASSED
+pe.edu.upeu.clinicamobil.presentation.paciente.PacienteViewModelTest > erroresDeValidacionEnFormulario PASSED
+pe.edu.upeu.clinicamobil.presentation.paciente.PacienteViewModelTest > registrarLimpiaYRecarga PASSED
+pe.edu.upeu.clinicamobil.di.AppModuleTest > resuelveImplementacionCorrectaYRepositorioEsUnico PASSED
+pe.edu.upeu.clinicamobil.di.AppModuleTest > resuelveCasosDeUso PASSED
+pe.edu.upeu.clinicamobil.domain.usecase.ListarPacientesUseCaseTest > listaVacia PASSED
+pe.edu.upeu.clinicamobil.domain.usecase.ListarPacientesUseCaseTest > listaConElementos PASSED
+
+BUILD SUCCESSFUL in 15s
+30 actionable tasks: 1 executed, 29 up-to-date
+22 tests completed, 0 failed
 ```
