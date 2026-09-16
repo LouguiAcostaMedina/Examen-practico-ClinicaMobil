@@ -1,0 +1,12 @@
+.gradle/
+build/
+**/build/
+.idea/
+local.properties
+*.iml
+.DS_Store
+DerivedData/
+xcuserdata/
+*.local
+/gradle-*/
+/gradle-*-bin.zip
